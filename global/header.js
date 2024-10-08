@@ -2,8 +2,8 @@
 export function loadHeaderPage() {
     return new Promise((resolve) => {
         //const header = document.createElement('header');
-        const header = document.querySelector('header')
         header.innerHTML = ''
+        const header = document.querySelector('header')
     
         // Crear nav del header
         const nav = document.createElement('nav');
