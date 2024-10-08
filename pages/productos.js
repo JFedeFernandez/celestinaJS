@@ -11,7 +11,7 @@ export function loadProductosPage() {
         const articles = [
             {
                 clas: 'articulos',
-                src:'./assets/img/camino-mesa-pampa.png',
+                src:'../celestinaJS/assets/img/camino-mesa-pampa.png',
                 alt:'Camino de mesa Pampa tejido a mano, ideal para decoración de mesas y sillas',
                 title: 'Camino Mesa',
                 subtitle: 'Pampa',
