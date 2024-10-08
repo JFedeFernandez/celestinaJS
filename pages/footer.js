@@ -1,6 +1,6 @@
 export function loadFooterPage() {
-    return new Promise((resolve) => {
-        const footer = document.querySelector('footer')
+        const footer = document.getElementById('footer')
+
         const ul = document.createElement('ul')
         const p = document.createElement('p')
     
@@ -28,7 +28,4 @@ export function loadFooterPage() {
         footer.appendChild(p)
     
         document.body.appendChild(footer)
-
-        resolve();
-    })
 }

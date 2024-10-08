@@ -1,9 +1,5 @@
-import { loadHeaderPage } from "../global/header.js"
-import { loadFooterPage } from "../global/footer.js"
-document.addEventListener('DOMContentLoaded', () => {
-    loadHeaderPage().then(data => {
-        const main = document.querySelector('main')
-        main.className = ''
+export function loadContactoPage() {
+    main.className = ''
     
         const contactos = document.createElement('div')
         contactos.className = 'contactos'
@@ -80,6 +76,4 @@ document.addEventListener('DOMContentLoaded', () => {
     
         contactos.appendChild(form)
         document.body.appendChild(main)
-        loadFooterPage()
-    })
-})
+}

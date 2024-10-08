@@ -1,9 +1,4 @@
-import { loadHeaderPage } from "../global/header.js"
-import { loadFooterPage } from "../global/footer.js"
-
-document.addEventListener('DOMContentLoaded', () => {
-    loadHeaderPage().then(data => {
-        const main = document.querySelector('main')
+export function loadNosotrosPage() {
         main.className = 'nosotras'
     
         const h1 = document.createElement('h1')
@@ -54,6 +49,4 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     
         document.body.appendChild(main)
-        loadFooterPage()
-    })
-})
+}

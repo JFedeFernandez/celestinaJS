@@ -1,11 +1,5 @@
-import { loadHeaderPage } from "../global/header.js"
-import { loadFooterPage } from "../global/footer.js"
-
-document.addEventListener('DOMContentLoaded', () => {
-    loadHeaderPage().then(data => {
-        const main = document.querySelector('main')
+export function loadProductosPage() {
         main.className = 'articles'
-    
         const h1 = document.createElement('h1')
         h1.className = 'titulo'
         h1.textContent = 'Nuestros Productos'
@@ -98,6 +92,4 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         main.appendChild(boxArticulos)
         document.body.appendChild(main)
-        loadFooterPage()
-    })
-})
+}
