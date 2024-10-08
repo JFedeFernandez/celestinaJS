@@ -3,7 +3,7 @@ import { loadFooterPage } from "../global/footer.js"
 
 document.addEventListener('DOMContentLoaded', () => {
     loadHeaderPage().then(data => {
-        const main = document.createElement('main')
+        const main = document.querySelector('main')
         main.className = 'articles'
     
         const h1 = document.createElement('h1')
