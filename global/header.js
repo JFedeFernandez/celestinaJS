@@ -3,17 +3,14 @@ export function loadHeaderPage() {
     return new Promise((resolve) => {
         //const header = document.createElement('header');
         const header = document.querySelector('header')
-        header.innerHTML = ''
     
         // Crear nav del header
         const nav = document.createElement('nav');
-        nav.innerHTML = ''
         nav.setAttribute('aria-label', 'Navegación principal');
     
         // Crear imagen del header
         const img = document.createElement('img');
-        img.innerHTML = ''
-        img.src = '/assets/img/logo.webp';
+        img.src = '../assets/img/logo.webp';
         img.alt = 'Logo de La Celestina - Casa de Artesanías y Manualidades';
         img.style = 'width: 150px; height: auto';
     
@@ -55,17 +52,16 @@ export function loadHeaderPage() {
         offcanvasBody.classList.add('offcanvas-body');
     
         const ul = document.createElement('ul');
-        ul.innerHTML = ''
         ul.classList.add('navbar');
         ul.setAttribute('role', 'list');
     
         // Definir los elementos del menú con sus funciones de carga
         const menuItems = [
             { href: '../index.html', icon: 'fa-solid fa-house', text: 'Inicio', id: 'index'},
-            { href: '/pages/fotos.html', icon: 'fa-regular fa-image', text: 'Fotos', id: 'fotos'},
-            { href: '/pages/productos.html', icon: 'fa-solid fa-cart-shopping', text: 'Productos', id: 'productos'},
-            { href: '/pages/nosotros.html', icon: 'fa-solid fa-circle-info', text: 'Nosotros', id: 'nosotros'},
-            { href: '/pages/contacto.html', icon: 'fa-regular fa-envelope', text: 'Contacto', id: 'contacto'}
+            { href: '../pages/fotos.html', icon: 'fa-regular fa-image', text: 'Fotos', id: 'fotos'},
+            { href: '../pages/productos.html', icon: 'fa-solid fa-cart-shopping', text: 'Productos', id: 'productos'},
+            { href: '../pages/nosotros.html', icon: 'fa-solid fa-circle-info', text: 'Nosotros', id: 'nosotros'},
+            { href: '../pages/contacto.html', icon: 'fa-regular fa-envelope', text: 'Contacto', id: 'contacto'}
         ];
     
         // Crear los elementos del menú
@@ -73,9 +69,6 @@ export function loadHeaderPage() {
             const li = document.createElement('li');
             const i = document.createElement('i');
             const a = document.createElement('a');
-            li.innerHTML = ''
-            i.innerHTML = ''
-            a.innerHTML = ''
     
             a.href = element.href;
             a.setAttribute('aria-current', 'page');
@@ -95,23 +88,18 @@ export function loadHeaderPage() {
         offcanvas.appendChild(offcanvasBody);
     
         const navList = document.createElement('ul');
-        navList.innerHTML = ''
         navList.setAttribute('role', 'list');
     
         // Reutilizar los mismos elementos del menú para la navegación fuera del offcanvas
         menuItems.forEach(item => {
             const li = document.createElement('li');
             const a = document.createElement('a');
-            li.innerHTML = ''
-            a.innerHTML = ''
-
             a.href = item.href;
             a.setAttribute('aria-current', 'page');
             a.setAttribute('role', 'listitem');
             a.id = item.id
             
             const icon = document.createElement('i');
-            icon.innerHTML = ''
             icon.className = item.icon;
             a.appendChild(icon);
         
