@@ -15,37 +15,37 @@ export function loadFotosPage(main) {
 
     const articles = [
         {
-            src:'./assets/img/camino-mesa-pampa.png',
+            src:'./celestinaJS/assets/img/camino-mesa-pampa.png',
             alt:'Camino de mesa Pampa tejido a mano, ideal para decoración de mesas y sillas',
             content: 'Camino de mesa tejido al telar industrial.<br>Ideal para decorar sillas, paredes, mesas o como pie de cama.<br>Diseño guarda Pampa.',
             ariaLabel: 'Ver más sobre el camino de mesa Pampa'
         },
         {
-            src:'./assets/img/camino-mesa.png',
+            src:'./celestinaJS/assets/img/camino-mesa.png',
             alt:'Camino de mesa Cactus tejido a mano, ideal para decoración de mesas y sillas',
             content: 'Funda para almohadón tejido al telar industrial.<br>Ideal para decorar tu hogar.<br>Diseño Cactus.',
             ariaLabel: 'Ver más sobre la funda de almohadón Cactus'
         },
         {
-            src: './assets/img/funda-almohadon-amancay.png',
+            src: './celestinaJS/assets/img/funda-almohadon-amancay.png',
             alt:'Funda para almohadón Cactus tejida a mano, ideal para decoración de tu hogar',
             content: 'Funda para almohadón tejido al telar industrial.<br>Ideal para decorar tus espacios, sillones, sillas.<br>Diseño Amancay.',
             ariaLabel: 'Ver más sobre la funda de almohadón Amancay',
         },
         {
-            src:'./assets/img/funda-almohadon-cactus.png',
+            src:'./celestinaJS/assets/img/funda-almohadon-cactus.png',
             alt:'Funda para almohadón Cactus tejida a mano, ideal para decoración de tu hogar',
             content: 'Funda para almohadón tejido al telar industrial.<br>Ideal para decorar tu hogar.<br>Diseño Cactus.',
             ariaLabel: 'Ver más sobre la funda de almohadón Cactus'
         },
         {
-            src:'./assets/img/manta-decorativa-mapuche.png',
+            src:'./celestinaJS/assets/img/manta-decorativa-mapuche.png',
             alt:'Manta Mapuche tejida a mano, ideal para decorar sillones, camas y mesas',
             content: 'Manta tejida al telar industrial.<br>Ideal para decorar sillones, camas, paredes y mesas.<br>Diseño Mapuche.',
             ariaLabel:'Ver más sobre la manta Mapuche'
         },
         {
-            src:'./assets/img/manta-decorativo-floral.png',
+            src:'./celestinaJS/assets/img/manta-decorativo-floral.png',
             alt:'Manta Floral tejida a mano, ideal para decorar sillones, camas y mesas',
             content: 'Manta tejida al telar industrial.<br>Ideal para decorar sillones, camas, paredes y mesas.<br>Diseño Flores.',
             ariaLabel: 'Ver más sobre la manta Floral'
