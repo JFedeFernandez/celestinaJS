@@ -10,7 +10,7 @@ export function loadHeaderPage() {
     
         // Crear imagen del header
         const img = document.createElement('img');
-        img.src = '../assets/img/logo.webp';
+        img.src = './assets/img/logo.webp';
         img.alt = 'Logo de La Celestina - Casa de Artesanías y Manualidades';
         img.style = 'width: 150px; height: auto';
     
@@ -58,10 +58,10 @@ export function loadHeaderPage() {
         // Definir los elementos del menú con sus funciones de carga
         const menuItems = [
             { href: '../index.html', icon: 'fa-solid fa-house', text: 'Inicio', id: 'index'},
-            { href: '../pages/fotos.html', icon: 'fa-regular fa-image', text: 'Fotos', id: 'fotos'},
-            { href: '../pages/productos.html', icon: 'fa-solid fa-cart-shopping', text: 'Productos', id: 'productos'},
-            { href: '../pages/nosotros.html', icon: 'fa-solid fa-circle-info', text: 'Nosotros', id: 'nosotros'},
-            { href: '../pages/contacto.html', icon: 'fa-regular fa-envelope', text: 'Contacto', id: 'contacto'}
+            { href: './pages/fotos.html', icon: 'fa-regular fa-image', text: 'Fotos', id: 'fotos'},
+            { href: './pages/productos.html', icon: 'fa-solid fa-cart-shopping', text: 'Productos', id: 'productos'},
+            { href: './pages/nosotros.html', icon: 'fa-solid fa-circle-info', text: 'Nosotros', id: 'nosotros'},
+            { href: './pages/contacto.html', icon: 'fa-regular fa-envelope', text: 'Contacto', id: 'contacto'}
         ];
     
         // Crear los elementos del menú
