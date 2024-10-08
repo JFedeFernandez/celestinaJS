@@ -5,7 +5,7 @@ export function createHeader() {
     nav.setAttribute('aria-label', 'Navegación principal');
 
     const img = document.createElement('img');
-    img.src = '../assets/img/logo.webp';
+    img.src = './assets/img/logo.webp';
     img.alt = 'Logo de La Celestina - Casa de Artesanías y Manualidades';
     img.style = 'width: 150px; height: auto';
 

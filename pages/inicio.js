@@ -15,9 +15,9 @@ export function loadInicioPage() {
     carouselInner.className = 'carousel-inner'
 
     const imgsCarousel = [
-        {dataIterval: 1000, src:'/assets/img/ovillo-de-lana.webp', class:"d-block w-100", alt:'Ovillo de lana', loading:"lazy", active: true},
-        {dataIterval: 1000, src:"/assets/img/tijeras-hilos.webp", class:"d-block", alt:"Tijeras hilos", loading:"lazy", active: false},
-        {src:"/assets/img/hoja-artesanias.webp", class:"d-block", alt:"Hoja artesanales", loading:"lazy", active: false}
+        {dataIterval: 1000, src:'../celestinaJS/assets/img/ovillo-de-lana.webp', class:"d-block w-100", alt:'Ovillo de lana', loading:"lazy", active: true},
+        {dataIterval: 1000, src:"../celestinaJS/assets/img/tijeras-hilos.webp", class:"d-block", alt:"Tijeras hilos", loading:"lazy", active: false},
+        {src:"../celestinaJS/assets/img/hoja-artesanias.webp", class:"d-block", alt:"Hoja artesanales", loading:"lazy", active: false}
     ]
     
     imgsCarousel.forEach(element => {
