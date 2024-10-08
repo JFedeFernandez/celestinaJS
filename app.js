@@ -10,10 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const footer = document.getElementById('footer')
     document.querySelectorAll('nav a').forEach(link => {
         link.addEventListener('click', async (event) => {
-            event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+            
             const page = event.target.id; // Obtener el id de la página a cargar
-            const url = `/${page}`;
-            history.pushState({ page }, null, url)
+
             // Limpiar el contenido actual del main
             main.innerHTML = '';
 
