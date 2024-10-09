@@ -68,6 +68,7 @@ export function createHeader() {
         a.setAttribute('aria-current', 'page');
         a.setAttribute('role', 'listitem');
         a.textContent = element.text;
+        a.id = element.id
 
         i.className = element.icon;
         a.appendChild(i);
