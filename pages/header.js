@@ -67,11 +67,13 @@ export function createHeader() {
         a.href = element.href;
         a.setAttribute('aria-current', 'page');
         a.setAttribute('role', 'listitem');
-        a.textContent = element.text;
         a.id = element.id
 
         i.className = element.icon;
         a.appendChild(i);
+
+        const text = document.createTextNode(' ' + element.text);
+        a.appendChild(text)
 
         li.appendChild(a);
         ul.appendChild(li);
